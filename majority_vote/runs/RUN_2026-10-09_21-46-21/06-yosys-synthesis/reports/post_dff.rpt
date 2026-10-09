@@ -1,0 +1,19 @@
+87. Printing statistics.
+
+=== majority_vote ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+        8 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+        5 cells
+        3   $_AND_
+        2   $_OR_
+
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+

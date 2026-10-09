@@ -1,0 +1,105 @@
+Reading timing models for corner nom_tt_025C_5v00…
+Reading timing library for the 'nom_tt_025C_5v00' corner at '/config/.ciel/ciel/gf180mcu/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+Reading OpenROAD database at '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/25-openroad-ioplacement/majority_vote.odb'…
+Reading design constraints file at '/nix/store/6lyl44lnn8z65vx1smpf55aiff6aa392-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/base.sdc'…
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Using clock __VIRTUAL_CLK__…
+[INFO] Setting output delay to: 2.0
+[INFO] Setting input delay to: 2.0
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Setting load to: 0.07291
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+[INFO] Setting timing derate to: 5.0%
+[WARNING STA-0450] virtual clock __VIRTUAL_CLK__ can not be propagated.
+[INFO] Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO] Setting signal max routing layer to: Metal5 and clock max routing layer to Metal5. 
++ global_placement -density 0.1495831 -routability_driven -pad_right 0 -pad_left 0 -init_wirelength_coef 0.25
+[INFO GPL-0001] ---- Initialize GPL Main Data Structures
+[INFO GPL-0002] DBU: 2000
+[INFO GPL-0003] SiteSize: (  0.560  3.920 ) um
+[INFO GPL-0004] CoreBBox: (  6.720 15.680 ) ( 152.880 82.320 ) um
+[INFO GPL-0036] Movable instances area:         43.904 um^2
+[INFO GPL-0037] Total instances area:          333.670 um^2
+[INFO GPL-0035] Pin density area adjust:         0.000 um^2
+[INFO GPL-0032] ---- Initialize Region: Top-level
+[INFO GPL-0006] Number of instances:                69
+[INFO GPL-0007] Movable instances:                   3
+[INFO GPL-0008] Fixed instances:                    66
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                      6
+[INFO GPL-0011] Number of pins:                     14
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 160.000 100.000 ) um
+[INFO GPL-0013] Core BBox: (  6.720 15.680 ) ( 152.880 82.320 ) um
+[INFO GPL-0016] Core area:                    9740.102 um^2
+[INFO GPL-0014] Region name: top-level.
+[INFO GPL-0015] Region area:                  9740.102 um^2
+[INFO GPL-0017] Fixed instances area:          289.766 um^2
+[INFO GPL-0018] Movable instances area:         43.904 um^2
+[INFO GPL-0019] Utilization:                     0.465 %
+[INFO GPL-0020] Standard cells area:            43.904 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0005] ---- Execute Conjugate Gradient Initial Placement.
+[INFO GPL-0051] Source of initial instance position counters:
+	Odb location = 3	Core center = 0	Region center = 0
+[InitialPlace]  Iter: 1 conjugate gradient residual: 0.00000004 HPWL: 476007
+[InitialPlace]  Iter: 2 conjugate gradient residual: 0.00000000 HPWL: 207081
+[InitialPlace]  Iter: 3 conjugate gradient residual: 0.00000000 HPWL: 207120
+[InitialPlace]  Iter: 4 conjugate gradient residual: 0.00000000 HPWL: 207143
+[InitialPlace]  Iter: 5 conjugate gradient residual: 0.00000000 HPWL: 207153
+[INFO GPL-0033] ---- Initialize Nesterov Region: Top-level
+[INFO GPL-0023] Placement target density:       0.1496
+[INFO GPL-0024] Movable insts average area:     14.635 um^2
+[INFO GPL-0025] Ideal bin area:                 97.836 um^2
+[INFO GPL-0026] Ideal bin count:                    99
+[INFO GPL-0027] Total bin area:               9740.102 um^2
+[INFO GPL-0028] Bin count (X, Y):           8 ,      4
+[INFO GPL-0029] Bin size (W * H):      18.270 * 16.660 um
+[INFO GPL-0030] Number of bins:                     32
+[INFO GPL-0007] ---- Execute Nesterov Global Placement.
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        0 |   0.0000 |  1.132465e+02 |   +0.00% |  2.93e-13 |      
+[INFO GPL-0038] Routability snapshot saved at iter = 1
+        0 |   0.0000 |  1.132465e+02 |          |           |      
+[INFO GPL-0040] Routability iteration: 1
+[INFO GPL-0041] Total routing overflow: 0.0000
+[INFO GPL-0042] Number of overflowed tiles: 0 (0.00%)
+[INFO GPL-0043] Average top 0.5% routing congestion: 0.4630
+[INFO GPL-0044] Average top 1.0% routing congestion: 0.4602
+[INFO GPL-0045] Average top 2.0% routing congestion: 0.4524
+[INFO GPL-0046] Average top 5.0% routing congestion: 0.4379
+[INFO GPL-0047] Routability iteration weighted routing congestion: 0.4616
+[INFO GPL-0050] Weighted routing congestion is lower than target routing congestion(1.0100), end routability optimization.
+[INFO GPL-0090] Routability finished. Target routing congestion achieved succesfully.
+        0 |   0.0000 |  1.132465e+02 |          |  3.04e-13 |      
+---------------------------------------------------------------
+[INFO GPL-1001] Global placement finished at iteration 0
+[INFO GPL-1003] Routability mode iteration count: 0
+[INFO GPL-1005] Routability final weighted congestion: 0.4621
+[INFO GPL-1002] Placed Cell Area               43.9040
+[INFO GPL-1003] Available Free Area          9450.3360
+[INFO GPL-1004] Minimum Feasible Density        0.0100 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.0052
+[INFO GPL-1008]     - For 80% usage of free space: 0.0058
+[INFO GPL-1009]     - For 50% usage of free space: 0.0093
+[INFO GPL-1011] Original area (um^2): 43.90
+[INFO GPL-1012] Total routability artificial inflation: 0.00 (+0.00%)
+[INFO GPL-1014] Final placement area: 43.90 (+0.00%)
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                              34     149.27
+  Tap cell                                 66     289.77
+  Multi-Input combinational cell            3      43.90
+  Total                                   103     482.94
+Writing OpenROAD database to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/28-openroad-globalplacement/majority_vote.odb'…
+Writing netlist to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/28-openroad-globalplacement/majority_vote.nl.v'…
+Writing powered netlist to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/28-openroad-globalplacement/majority_vote.pnl.v'…
+Writing layout to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/28-openroad-globalplacement/majority_vote.def'…
+Writing timing constraints to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/28-openroad-globalplacement/majority_vote.sdc'…

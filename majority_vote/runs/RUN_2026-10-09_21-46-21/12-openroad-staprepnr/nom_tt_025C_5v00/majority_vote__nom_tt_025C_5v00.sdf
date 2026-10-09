@@ -1,0 +1,63 @@
+(DELAYFILE
+ (SDFVERSION "3.0")
+ (DESIGN "majority_vote")
+ (DATE "Fri Oct  9 21:46:27 2026")
+ (VENDOR "Parallax")
+ (PROGRAM "STA")
+ (VERSION "2.7.0")
+ (DIVIDER .)
+ (TIMESCALE 1ns)
+ (CELL
+  (CELLTYPE "majority_vote")
+  (INSTANCE)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT vote_a _2_.A1 (0.091:0.091:0.091) (0.056:0.056:0.056))
+    (INTERCONNECT vote_a _3_.A1 (0.091:0.091:0.091) (0.056:0.056:0.056))
+    (INTERCONNECT vote_b _3_.B (0.040:0.040:0.040) (0.025:0.025:0.025))
+    (INTERCONNECT vote_c _2_.A2 (0.088:0.088:0.088) (0.054:0.054:0.054))
+    (INTERCONNECT vote_c _3_.A2 (0.088:0.088:0.088) (0.054:0.054:0.054))
+    (INTERCONNECT _2_.ZN _4_.A1 (0.000:0.000:0.000))
+    (INTERCONNECT _3_.ZN _4_.A2 (0.000:0.000:0.000))
+    (INTERCONNECT _4_.ZN majority (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__nor2_1")
+  (INSTANCE _2_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A1 ZN (0.171:0.171:0.171) (0.115:0.115:0.115))
+    (IOPATH A2 ZN (0.190:0.190:0.190) (0.136:0.136:0.136))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__aoi21_1")
+  (INSTANCE _3_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A1 ZN (0.177:0.177:0.177) (0.119:0.119:0.119))
+    (IOPATH A2 ZN (0.207:0.207:0.207) (0.116:0.116:0.116))
+    (IOPATH B ZN (0.244:0.244:0.244) (0.164:0.164:0.164))
+    (COND A1===1'b1 && A2===1'b0
+     (IOPATH B ZN (0.244:0.244:0.244) (0.154:0.154:0.154)))
+    (COND A1===1'b0 && A2===1'b1
+     (IOPATH B ZN (0.206:0.206:0.206) (0.144:0.144:0.144)))
+    (COND A1===1'b0 && A2===1'b0
+     (IOPATH B ZN (0.172:0.172:0.172) (0.164:0.164:0.164)))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__nor2_1")
+  (INSTANCE _4_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A1 ZN (1.317:1.320:1.322) (0.696:0.696:0.696))
+    (IOPATH A2 ZN (1.340:1.344:1.349) (0.713:0.722:0.731))
+   )
+  )
+ )
+)

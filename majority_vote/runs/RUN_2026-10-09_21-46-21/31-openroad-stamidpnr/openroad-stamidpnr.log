@@ -1,0 +1,315 @@
+Reading timing models for corner nom_tt_025C_5v00…
+Reading timing library for the 'nom_tt_025C_5v00' corner at '/config/.ciel/ciel/gf180mcu/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+Reading OpenROAD database at '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/28-openroad-globalplacement/majority_vote.odb'…
+Reading design constraints file at '/nix/store/6lyl44lnn8z65vx1smpf55aiff6aa392-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/base.sdc'…
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Using clock __VIRTUAL_CLK__…
+[INFO] Setting output delay to: 2.0
+[INFO] Setting input delay to: 2.0
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Setting load to: 0.07291
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+[INFO] Setting timing derate to: 5.0%
+[WARNING STA-0450] virtual clock __VIRTUAL_CLK__ can not be propagated.
+%OL_CREATE_REPORT min.rpt
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+======================= nom_tt_025C_5v00 Corner ===================================
+
+Startpoint: vote_b (input port clocked by __VIRTUAL_CLK__)
+Endpoint: majority (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 v input external delay
+     1    0.006234    0.087137    0.036035    2.036035 v vote_b (in)
+                                                         vote_b (net)
+                      0.087137    0.000000    2.036035 v _3_/B (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.004350    0.233474    0.168638    2.204673 ^ _3_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _1_ (net)
+                      0.233474    0.000002    2.204674 ^ _4_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.075181    1.050227    0.695277    2.899952 v _4_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         majority (net)
+                      1.050227    0.000633    2.900584 v majority (out)
+                                              2.900584   data arrival time
+
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -2.000000   -1.750000   output external delay
+                                             -1.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -1.750000   data required time
+                                             -2.900584   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.650584   slack (MET)
+
+
+
+%OL_END_REPORT
+%OL_CREATE_REPORT max.rpt
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+======================= nom_tt_025C_5v00 Corner ===================================
+
+Startpoint: vote_a (input port clocked by __VIRTUAL_CLK__)
+Endpoint: majority (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 ^ input external delay
+     2    0.011566    0.234469    0.117213    2.117213 ^ vote_a (in)
+                                                         vote_a (net)
+                      0.234469    0.000000    2.117213 ^ _3_/A1 (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.004350    0.211924    0.128720    2.245933 v _3_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _1_ (net)
+                      0.211924    0.000002    2.245935 v _4_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.075181    2.376779    1.456537    3.702472 ^ _4_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         majority (net)
+                      2.376779    0.000699    3.703171 ^ majority (out)
+                                              3.703171   data arrival time
+
+                      0.000000   10.000000   10.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000   10.000000   clock network delay (ideal)
+                                 -0.250000    9.750000   clock uncertainty
+                                  0.000000    9.750000   clock reconvergence pessimism
+                                 -2.000000    7.750000   output external delay
+                                              7.750000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.750000   data required time
+                                             -3.703171   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.046829   slack (MET)
+
+
+
+%OL_END_REPORT
+%OL_CREATE_REPORT checks.rpt
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_tt_025C_5v00 Corner ===================================
+
+Startpoint: vote_a (input port clocked by __VIRTUAL_CLK__)
+Endpoint: majority (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 ^ input external delay
+     2    0.011566    0.234469    0.117213    2.117213 ^ vote_a (in)
+                                                         vote_a (net)
+                      0.234469    0.000000    2.117213 ^ _3_/A1 (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.004350    0.211924    0.128720    2.245933 v _3_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _1_ (net)
+                      0.211924    0.000002    2.245935 v _4_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.075181    2.376779    1.456537    3.702472 ^ _4_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         majority (net)
+                      2.376779    0.000699    3.703171 ^ majority (out)
+                                              3.703171   data arrival time
+
+                      0.000000   10.000000   10.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000   10.000000   clock network delay (ideal)
+                                 -0.250000    9.750000   clock uncertainty
+                                  0.000000    9.750000   clock reconvergence pessimism
+                                 -2.000000    7.750000   output external delay
+                                              7.750000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.750000   data required time
+                                             -3.703171   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.046829   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_tt_025C_5v00 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_tt_025C_5v00 Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 0 unannotated drivers.
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+Writing metric design__max_slew_violation__count__corner:nom_tt_025C_5v00: 0
+max fanout violation count 0
+Writing metric design__max_fanout_violation__count__corner:nom_tt_025C_5v00: 0
+max cap violation count 0
+Writing metric design__max_cap_violation__count__corner:nom_tt_025C_5v00: 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+%OL_END_REPORT
+%OL_CREATE_REPORT power.rpt
+
+===========================================================================
+ report_power
+============================================================================
+======================= nom_tt_025C_5v00 Corner ===================================
+
+Group                    Internal    Switching      Leakage        Total
+                            Power        Power        Power        Power (Watts)
+------------------------------------------------------------------------
+Sequential           0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00   0.0%
+Combinational        3.342929e-06 1.593724e-05 3.169240e-10 1.928048e-05 100.0%
+Clock                0.000000e+00 0.000000e+00 5.000000e-09 5.000000e-09   0.0%
+Macro                0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00   0.0%
+Pad                  0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00   0.0%
+------------------------------------------------------------------------
+Total                3.342929e-06 1.593724e-05 5.316924e-09 1.928548e-05 100.0%
+                            17.3%        82.6%         0.0%
+Writing metric power__internal__total: 3.3429287213948555e-6
+Writing metric power__switching__total: 1.593723936821334e-5
+Writing metric power__leakage__total: 5.316924234222142e-9
+Writing metric power__total: 1.928548408614006e-5
+
+%OL_END_REPORT
+%OL_CREATE_REPORT skew.min.rpt
+
+===========================================================================
+Clock Skew (Hold)
+============================================================================
+Writing metric clock__skew__worst_hold__corner:nom_tt_025C_5v00: 0.0
+======================= nom_tt_025C_5v00 Corner ===================================
+
+Clock __VIRTUAL_CLK__
+No launch/capture paths found.
+
+%OL_END_REPORT
+%OL_CREATE_REPORT skew.max.rpt
+
+===========================================================================
+Clock Skew (Setup)
+============================================================================
+Writing metric clock__skew__worst_setup__corner:nom_tt_025C_5v00: 0.0
+======================= nom_tt_025C_5v00 Corner ===================================
+
+Clock __VIRTUAL_CLK__
+No launch/capture paths found.
+
+%OL_END_REPORT
+%OL_CREATE_REPORT ws.min.rpt
+
+===========================================================================
+Worst Slack (Hold)
+============================================================================
+Writing metric timing__hold__ws__corner:nom_tt_025C_5v00: 4.650584049491967
+nom_tt_025C_5v00: 4.650584049491967
+%OL_END_REPORT
+%OL_CREATE_REPORT ws.max.rpt
+
+===========================================================================
+Worst Slack (Setup)
+============================================================================
+Writing metric timing__setup__ws__corner:nom_tt_025C_5v00: 4.046828764413887
+nom_tt_025C_5v00: 4.046828764413887
+%OL_END_REPORT
+%OL_CREATE_REPORT tns.min.rpt
+
+===========================================================================
+Total Negative Slack (Hold)
+============================================================================
+Writing metric timing__hold__tns__corner:nom_tt_025C_5v00: 0.0
+nom_tt_025C_5v00: 0.0
+%OL_END_REPORT
+%OL_CREATE_REPORT tns.max.rpt
+
+===========================================================================
+Total Negative Slack (Setup)
+============================================================================
+Writing metric timing__setup__tns__corner:nom_tt_025C_5v00: 0.0
+nom_tt_025C_5v00: 0.0
+%OL_END_REPORT
+%OL_CREATE_REPORT wns.min.rpt
+
+===========================================================================
+Worst Negative Slack (Hold)
+============================================================================
+Writing metric timing__hold__wns__corner:nom_tt_025C_5v00: 0
+nom_tt_025C_5v00: 0
+%OL_END_REPORT
+%OL_CREATE_REPORT wns.max.rpt
+
+===========================================================================
+Worst Negative Slack (Setup)
+============================================================================
+Writing metric timing__setup__wns__corner:nom_tt_025C_5v00: 0.0
+nom_tt_025C_5v00: 0.0
+%OL_END_REPORT
+%OL_CREATE_REPORT violator_list.rpt
+
+===========================================================================
+Violator List
+============================================================================
+Writing metric timing__hold_vio__count__corner:nom_tt_025C_5v00: 0
+Writing metric timing__hold_r2r__ws__corner:nom_tt_025C_5v00: 1e30
+Writing metric timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00: 0
+Writing metric timing__setup_vio__count__corner:nom_tt_025C_5v00: 0
+Writing metric timing__setup_r2r__ws__corner:nom_tt_025C_5v00: 1e30
+Writing metric timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00: 0
+%OL_END_REPORT
+%OL_CREATE_REPORT unpropagated.rpt
+__VIRTUAL_CLK__
+%OL_END_REPORT
+%OL_CREATE_REPORT clock.rpt
+Clock: __VIRTUAL_CLK__
+Sources: 
+Generated: no
+Virtual: yes
+Propagated: no
+Period: 10.000000
+
+===========================================================================
+report_clock_properties
+============================================================================
+Clock                   Period          Waveform
+----------------------------------------------------
+__VIRTUAL_CLK__      10.000000    0.000000  5.000000
+
+===========================================================================
+report_clock_latency
+============================================================================
+Clock __VIRTUAL_CLK__
+
+
+===========================================================================
+report_clock_min_period
+============================================================================
+__VIRTUAL_CLK__ period_min = 0.00 fmax = inf
+%OL_END_REPORT

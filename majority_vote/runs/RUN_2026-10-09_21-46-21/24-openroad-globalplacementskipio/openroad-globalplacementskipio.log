@@ -1,0 +1,82 @@
+Reading timing models for corner nom_tt_025C_5v00…
+Reading timing library for the 'nom_tt_025C_5v00' corner at '/config/.ciel/ciel/gf180mcu/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+Reading OpenROAD database at '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/21-openroad-generatepdn/majority_vote.odb'…
+Reading design constraints file at '/nix/store/6lyl44lnn8z65vx1smpf55aiff6aa392-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/base.sdc'…
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Using clock __VIRTUAL_CLK__…
+[INFO] Setting output delay to: 2.0
+[INFO] Setting input delay to: 2.0
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Setting load to: 0.07291
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+[INFO] Setting timing derate to: 5.0%
+[WARNING STA-0450] virtual clock __VIRTUAL_CLK__ can not be propagated.
++ global_placement -density 0.1495831 -skip_io -pad_right 0 -pad_left 0 -init_wirelength_coef 0.25
+[INFO GPL-0001] ---- Initialize GPL Main Data Structures
+[INFO GPL-0002] DBU: 2000
+[INFO GPL-0003] SiteSize: (  0.560  3.920 ) um
+[INFO GPL-0004] CoreBBox: (  6.720 15.680 ) ( 152.880 82.320 ) um
+[INFO GPL-0036] Movable instances area:         43.904 um^2
+[INFO GPL-0037] Total instances area:          333.670 um^2
+[INFO GPL-0035] Pin density area adjust:         0.000 um^2
+[INFO GPL-0032] ---- Initialize Region: Top-level
+[INFO GPL-0006] Number of instances:                69
+[INFO GPL-0007] Movable instances:                   3
+[INFO GPL-0008] Fixed instances:                    66
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                      6
+[INFO GPL-0011] Number of pins:                     10
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 160.000 100.000 ) um
+[INFO GPL-0013] Core BBox: (  6.720 15.680 ) ( 152.880 82.320 ) um
+[INFO GPL-0016] Core area:                    9740.102 um^2
+[INFO GPL-0014] Region name: top-level.
+[INFO GPL-0015] Region area:                  9740.102 um^2
+[INFO GPL-0017] Fixed instances area:          289.766 um^2
+[INFO GPL-0018] Movable instances area:         43.904 um^2
+[INFO GPL-0019] Utilization:                     0.465 %
+[INFO GPL-0020] Standard cells area:            43.904 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0005] ---- Execute Conjugate Gradient Initial Placement.
+[INFO GPL-0051] Source of initial instance position counters:
+	Odb location = 0	Core center = 3	Region center = 0
+[INFO GPL-0033] ---- Initialize Nesterov Region: Top-level
+[INFO GPL-0023] Placement target density:       0.1496
+[INFO GPL-0024] Movable insts average area:     14.635 um^2
+[INFO GPL-0025] Ideal bin area:                 97.836 um^2
+[INFO GPL-0026] Ideal bin count:                    99
+[INFO GPL-0027] Total bin area:               9740.102 um^2
+[INFO GPL-0028] Bin count (X, Y):           8 ,      4
+[INFO GPL-0029] Bin size (W * H):      18.270 * 16.660 um
+[INFO GPL-0030] Number of bins:                     32
+[INFO GPL-0007] ---- Execute Nesterov Global Placement.
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        0 |   0.0000 |  3.954000e+00 |   +0.00% |  8.10e-14 |      
+        0 |   0.0000 |  3.954000e+00 |          |  8.42e-14 |      
+---------------------------------------------------------------
+[INFO GPL-1001] Global placement finished at iteration 0
+[INFO GPL-1002] Placed Cell Area               43.9040
+[INFO GPL-1003] Available Free Area          9450.3360
+[INFO GPL-1004] Minimum Feasible Density        0.0100 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.0052
+[INFO GPL-1008]     - For 80% usage of free space: 0.0058
+[INFO GPL-1009]     - For 50% usage of free space: 0.0093
+[INFO GPL-1014] Final placement area: 43.90 (+0.00%)
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                              34     149.27
+  Tap cell                                 66     289.77
+  Multi-Input combinational cell            3      43.90
+  Total                                   103     482.94
+Writing OpenROAD database to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/24-openroad-globalplacementskipio/majority_vote.odb'…
+Writing netlist to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/24-openroad-globalplacementskipio/majority_vote.nl.v'…
+Writing powered netlist to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/24-openroad-globalplacementskipio/majority_vote.pnl.v'…
+Writing layout to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/24-openroad-globalplacementskipio/majority_vote.def'…
+Writing timing constraints to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/24-openroad-globalplacementskipio/majority_vote.sdc'…

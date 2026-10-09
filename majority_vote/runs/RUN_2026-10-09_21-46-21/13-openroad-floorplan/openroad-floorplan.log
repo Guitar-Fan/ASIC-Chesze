@@ -1,0 +1,57 @@
+Reading timing models for corner nom_tt_025C_5v00…
+Reading timing library for the 'nom_tt_025C_5v00' corner at '/config/.ciel/ciel/gf180mcu/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+Reading technology LEF file at '/config/.ciel/ciel/gf180mcu/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/techlef/gf180mcu_fd_sc_mcu7t5v0__nom.tlef'…
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via1 :"
+  	EOLENCLOSURE 0.34 0.06 ;"
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via2 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via3 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via4 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0227] LEF file: /config/.ciel/ciel/gf180mcu/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/techlef/gf180mcu_fd_sc_mcu7t5v0__nom.tlef, created 15 layers, 60 vias
+Reading cell LEF file at '/config/.ciel/ciel/gf180mcu/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /config/.ciel/ciel/gf180mcu/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef at line 2.
+
+[INFO ODB-0227] LEF file: /config/.ciel/ciel/gf180mcu/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef, created 229 library cells
+Reading top-level netlist at '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/06-yosys-synthesis/majority_vote.nl.v'…
+Linking design 'majority_vote' from netlist…
+Reading design constraints file at '/nix/store/6lyl44lnn8z65vx1smpf55aiff6aa392-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/base.sdc'…
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Using clock __VIRTUAL_CLK__…
+[INFO] Setting output delay to: 2.0
+[INFO] Setting input delay to: 2.0
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Setting load to: 0.07291
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+[INFO] Setting timing derate to: 5.0%
+[WARNING STA-0450] virtual clock __VIRTUAL_CLK__ can not be propagated.
+Using site height: 3.92 and site width: 0.56…
+[INFO] Using absolute sizing for the floorplan.
++ initialize_floorplan -site GF018hv5v_mcu_sc7 -die_area 0.0 0.0 160.0 100.0 -core_area 6.720000000000001 15.68 153.28 84.32
+[INFO IFP-0001] Added 17 rows of 261 site GF018hv5v_mcu_sc7.
+[INFO IFP-0100] Die BBox:  (  0.000  0.000 ) ( 160.000 100.000 ) um
+[INFO IFP-0101] Core BBox: (  6.720 15.680 ) ( 152.880 82.320 ) um
+[INFO IFP-0102] Core area:                         9740.102 um^2
+[INFO IFP-0103] Total instances area:                43.904 um^2
+[INFO IFP-0104] Effective utilization:                0.005
+[INFO IFP-0105] Number of instances:                      3
+[INFO IFP-0030] Inserted 0 tiecells using gf180mcu_fd_sc_mcu7t5v0__tiel/ZN.
+[INFO IFP-0030] Inserted 0 tiecells using gf180mcu_fd_sc_mcu7t5v0__tieh/Z.
+[INFO] Extracting DIE_AREA and CORE_AREA from the floorplan
+[INFO] Floorplanned on a die area of 0.0 0.0 160.0 100.0 (µm).
+[INFO] Floorplanned on a core area of 6.72 15.68 152.88 82.32 (µm).
+Writing metric design__die__bbox: 0.0 0.0 160.0 100.0
+Writing metric design__core__bbox: 6.72 15.68 152.88 82.32
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Multi-Input combinational cell            3      43.90
+  Total                                     3      43.90
+Writing OpenROAD database to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/13-openroad-floorplan/majority_vote.odb'…
+Writing netlist to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/13-openroad-floorplan/majority_vote.nl.v'…
+Writing powered netlist to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/13-openroad-floorplan/majority_vote.pnl.v'…
+Writing layout to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/13-openroad-floorplan/majority_vote.def'…
+Writing timing constraints to '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/13-openroad-floorplan/majority_vote.sdc'…

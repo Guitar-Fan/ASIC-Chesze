@@ -1,0 +1,47 @@
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+======================= nom_ss_125C_4v50 Corner ===================================
+
+Startpoint: vote_c (input port clocked by __VIRTUAL_CLK__)
+Endpoint: majority (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 v input external delay
+     1    0.006775    0.156497    0.069802    2.069802 v vote_c (in)
+                                                         vote_c (net)
+                      0.156497    0.000000    2.069802 v input3/I (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+     2    0.010105    0.479837    2.046046    4.115848 v input3/Z (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+                                                         net3 (net)
+                      0.479837    0.000087    4.115935 v _3_/A2 (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.004884    0.625328    0.510112    4.626047 ^ _3_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _1_ (net)
+                      0.625328    0.000051    4.626097 ^ _4_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.004852    0.339986    0.308426    4.934524 v _4_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         net4 (net)
+                      0.339986    0.000103    4.934627 v output4/I (gf180mcu_fd_sc_mcu7t5v0__dlya_1)
+     1    0.074858    1.269321    1.850764    6.785391 v output4/Z (gf180mcu_fd_sc_mcu7t5v0__dlya_1)
+                                                         majority (net)
+                      1.269321    0.000765    6.786156 v majority (out)
+                                              6.786156   data arrival time
+
+                      0.000000   10.000000   10.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000   10.000000   clock network delay (ideal)
+                                 -0.250000    9.750000   clock uncertainty
+                                  0.000000    9.750000   clock reconvergence pessimism
+                                 -2.000000    7.750000   output external delay
+                                              7.750000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.750000   data required time
+                                             -6.786156   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.963844   slack (MET)
+
+
+

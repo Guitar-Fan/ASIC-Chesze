@@ -1,0 +1,340 @@
++ define_corners nom_ff_n40C_5v50
+Reading timing models for corner nom_ff_n40C_5v50…
+Reading cell library for the 'nom_ff_n40C_5v50' corner at '/config/.ciel/ciel/gf180mcu/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib'…
+Reading top-level netlist at '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/52-openroad-fillinsertion/majority_vote.nl.v'…
+Linking design 'majority_vote' from netlist…
+Reading design constraints file at '/nix/store/6lyl44lnn8z65vx1smpf55aiff6aa392-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/base.sdc'…
+Warning: base.sdc line 15, port '__VIRTUAL_CLK__' not found.
+[INFO] Using clock __VIRTUAL_CLK__…
+[INFO] Setting output delay to: 2.0
+[INFO] Setting input delay to: 2.0
+Warning: base.sdc line 32, port '__VIRTUAL_CLK__' not found.
+[INFO] Setting load to: 0.07291
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+Warning: base.sdc line 69, transition time can not be specified for virtual clocks.
+[INFO] Setting timing derate to: 5.0%
+Warning: base.sdc line 79, virtual clock __VIRTUAL_CLK__ can not be propagated.
+Reading top-level design parasitics for the 'nom_ff_n40C_5v50' corner at '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/54-openroad-rcx/nom/majority_vote.nom.spef'…
+%OL_CREATE_REPORT min.rpt
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+======================= nom_ff_n40C_5v50 Corner ===================================
+
+Startpoint: vote_b (input port clocked by __VIRTUAL_CLK__)
+Endpoint: majority (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 v input external delay
+     1    0.005568    0.052682    0.021805    2.021805 v vote_b (in)
+                                                         vote_b (net)
+                      0.052682    0.000000    2.021805 v input2/I (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+     1    0.006106    0.134247    0.553431    2.575236 v input2/Z (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+                                                         net2 (net)
+                      0.134247    0.000121    2.575357 v _3_/B (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.004775    0.158182    0.121959    2.697317 ^ _3_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _1_ (net)
+                      0.158182    0.000045    2.697361 ^ _4_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.004889    0.094559    0.089216    2.786578 v _4_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         net4 (net)
+                      0.094559    0.000094    2.786672 v output4/I (gf180mcu_fd_sc_mcu7t5v0__dlya_1)
+     1    0.074858    0.505734    0.598193    3.384865 v output4/Z (gf180mcu_fd_sc_mcu7t5v0__dlya_1)
+                                                         majority (net)
+                      0.505737    0.000692    3.385556 v majority (out)
+                                              3.385556   data arrival time
+
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -2.000000   -1.750000   output external delay
+                                             -1.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -1.750000   data required time
+                                             -3.385556   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.135556   slack (MET)
+
+
+
+%OL_END_REPORT
+%OL_CREATE_REPORT max.rpt
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+======================= nom_ff_n40C_5v50 Corner ===================================
+
+Startpoint: vote_c (input port clocked by __VIRTUAL_CLK__)
+Endpoint: majority (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 v input external delay
+     1    0.006764    0.060441    0.029284    2.029284 v vote_c (in)
+                                                         vote_c (net)
+                      0.060441    0.000000    2.029284 v input3/I (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+     2    0.009861    0.159569    0.640216    2.669500 v input3/Z (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+                                                         net3 (net)
+                      0.159569    0.000085    2.669585 v _3_/A2 (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.004775    0.208827    0.167692    2.837276 ^ _3_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _1_ (net)
+                      0.208827    0.000050    2.837326 ^ _4_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.004889    0.126048    0.106313    2.943639 v _4_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         net4 (net)
+                      0.126048    0.000104    2.943743 v output4/I (gf180mcu_fd_sc_mcu7t5v0__dlya_1)
+     1    0.074858    0.505728    0.673043    3.616786 v output4/Z (gf180mcu_fd_sc_mcu7t5v0__dlya_1)
+                                                         majority (net)
+                      0.505731    0.000764    3.617551 v majority (out)
+                                              3.617551   data arrival time
+
+                      0.000000   10.000000   10.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000   10.000000   clock network delay (ideal)
+                                 -0.250000    9.750000   clock uncertainty
+                                  0.000000    9.750000   clock reconvergence pessimism
+                                 -2.000000    7.750000   output external delay
+                                              7.750000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.750000   data required time
+                                             -3.617551   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.132449   slack (MET)
+
+
+
+%OL_END_REPORT
+%OL_CREATE_REPORT checks.rpt
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_ff_n40C_5v50 Corner ===================================
+
+Startpoint: vote_c (input port clocked by __VIRTUAL_CLK__)
+Endpoint: majority (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 v input external delay
+     1    0.006764    0.060441    0.029284    2.029284 v vote_c (in)
+                                                         vote_c (net)
+                      0.060441    0.000000    2.029284 v input3/I (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+     2    0.009861    0.159569    0.640216    2.669500 v input3/Z (gf180mcu_fd_sc_mcu7t5v0__dlyb_1)
+                                                         net3 (net)
+                      0.159569    0.000085    2.669585 v _3_/A2 (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.004775    0.208827    0.167692    2.837276 ^ _3_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _1_ (net)
+                      0.208827    0.000050    2.837326 ^ _4_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.004889    0.126048    0.106313    2.943639 v _4_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         net4 (net)
+                      0.126048    0.000104    2.943743 v output4/I (gf180mcu_fd_sc_mcu7t5v0__dlya_1)
+     1    0.074858    0.505728    0.673043    3.616786 v output4/Z (gf180mcu_fd_sc_mcu7t5v0__dlya_1)
+                                                         majority (net)
+                      0.505731    0.000764    3.617551 v majority (out)
+                                              3.617551   data arrival time
+
+                      0.000000   10.000000   10.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000   10.000000   clock network delay (ideal)
+                                 -0.250000    9.750000   clock uncertainty
+                                  0.000000    9.750000   clock reconvergence pessimism
+                                 -2.000000    7.750000   output external delay
+                                              7.750000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.750000   data required time
+                                             -3.617551   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.132449   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_ff_n40C_5v50 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_ff_n40C_5v50 Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 0 unannotated drivers.
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+%OL_METRIC_I design__max_slew_violation__count__corner:nom_ff_n40C_5v50 0
+max fanout violation count 0
+%OL_METRIC_I design__max_fanout_violation__count__corner:nom_ff_n40C_5v50 0
+max cap violation count 0
+%OL_METRIC_I design__max_cap_violation__count__corner:nom_ff_n40C_5v50 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+%OL_END_REPORT
+%OL_CREATE_REPORT power.rpt
+
+===========================================================================
+ report_power
+============================================================================
+======================= nom_ff_n40C_5v50 Corner ===================================
+
+Group                    Internal    Switching      Leakage        Total
+                            Power        Power        Power        Power (Watts)
+------------------------------------------------------------------------
+Sequential           0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00   0.0%
+Combinational        2.227690e-05 2.460750e-05 1.124521e-09 4.688553e-05 100.0%
+Clock                0.000000e+00 0.000000e+00 1.772647e-08 1.772647e-08   0.0%
+Macro                0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00   0.0%
+Pad                  0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00   0.0%
+------------------------------------------------------------------------
+Total                2.227690e-05 2.460750e-05 1.885099e-08 4.690325e-05 100.0%
+                            47.5%        52.5%         0.0%
+%OL_METRIC_F power__internal__total 2.2276903109741397e-5
+%OL_METRIC_F power__switching__total 2.4607497834949754e-5
+%OL_METRIC_F power__leakage__total 1.88509936549508e-8
+%OL_METRIC_F power__total 4.69032529508695e-5
+
+%OL_END_REPORT
+%OL_CREATE_REPORT skew.min.rpt
+
+===========================================================================
+Clock Skew (Hold)
+============================================================================
+%OL_METRIC_F clock__skew__worst_hold__corner:nom_ff_n40C_5v50 0.0
+======================= nom_ff_n40C_5v50 Corner ===================================
+
+Clock __VIRTUAL_CLK__
+No launch/capture paths found.
+
+%OL_END_REPORT
+%OL_CREATE_REPORT skew.max.rpt
+
+===========================================================================
+Clock Skew (Setup)
+============================================================================
+%OL_METRIC_F clock__skew__worst_setup__corner:nom_ff_n40C_5v50 0.0
+======================= nom_ff_n40C_5v50 Corner ===================================
+
+Clock __VIRTUAL_CLK__
+No launch/capture paths found.
+
+%OL_END_REPORT
+%OL_CREATE_REPORT ws.min.rpt
+
+===========================================================================
+Worst Slack (Hold)
+============================================================================
+%OL_METRIC_F timing__hold__ws__corner:nom_ff_n40C_5v50 5.135556125716774
+nom_ff_n40C_5v50: 5.135556125716774
+%OL_END_REPORT
+%OL_CREATE_REPORT ws.max.rpt
+
+===========================================================================
+Worst Slack (Setup)
+============================================================================
+%OL_METRIC_F timing__setup__ws__corner:nom_ff_n40C_5v50 4.13244916649449
+nom_ff_n40C_5v50: 4.13244916649449
+%OL_END_REPORT
+%OL_CREATE_REPORT tns.min.rpt
+
+===========================================================================
+Total Negative Slack (Hold)
+============================================================================
+%OL_METRIC_F timing__hold__tns__corner:nom_ff_n40C_5v50 0.0
+nom_ff_n40C_5v50: 0.0
+%OL_END_REPORT
+%OL_CREATE_REPORT tns.max.rpt
+
+===========================================================================
+Total Negative Slack (Setup)
+============================================================================
+%OL_METRIC_F timing__setup__tns__corner:nom_ff_n40C_5v50 0.0
+nom_ff_n40C_5v50: 0.0
+%OL_END_REPORT
+%OL_CREATE_REPORT wns.min.rpt
+
+===========================================================================
+Worst Negative Slack (Hold)
+============================================================================
+%OL_METRIC_F timing__hold__wns__corner:nom_ff_n40C_5v50 0
+nom_ff_n40C_5v50: 0
+%OL_END_REPORT
+%OL_CREATE_REPORT wns.max.rpt
+
+===========================================================================
+Worst Negative Slack (Setup)
+============================================================================
+%OL_METRIC_F timing__setup__wns__corner:nom_ff_n40C_5v50 0.0
+nom_ff_n40C_5v50: 0.0
+%OL_END_REPORT
+%OL_CREATE_REPORT violator_list.rpt
+
+===========================================================================
+Violator List
+============================================================================
+%OL_METRIC_I timing__hold_vio__count__corner:nom_ff_n40C_5v50 0
+%OL_METRIC_F timing__hold_r2r__ws__corner:nom_ff_n40C_5v50 inf
+%OL_METRIC_I timing__hold_r2r_vio__count__corner:nom_ff_n40C_5v50 0
+%OL_METRIC_I timing__setup_vio__count__corner:nom_ff_n40C_5v50 0
+%OL_METRIC_F timing__setup_r2r__ws__corner:nom_ff_n40C_5v50 inf
+%OL_METRIC_I timing__setup_r2r_vio__count__corner:nom_ff_n40C_5v50 0
+%OL_END_REPORT
+%OL_CREATE_REPORT unpropagated.rpt
+__VIRTUAL_CLK__
+%OL_END_REPORT
+%OL_CREATE_REPORT clock.rpt
+Clock: __VIRTUAL_CLK__
+Sources: 
+Generated: no
+Virtual: yes
+Propagated: no
+Period: 10.000000
+
+===========================================================================
+report_clock_properties
+============================================================================
+Clock                   Period          Waveform
+----------------------------------------------------
+__VIRTUAL_CLK__      10.000000    0.000000  5.000000
+
+===========================================================================
+report_clock_latency
+============================================================================
+Clock __VIRTUAL_CLK__
+
+
+===========================================================================
+report_clock_min_period
+============================================================================
+__VIRTUAL_CLK__ period_min = 0.00 fmax = inf
+%OL_END_REPORT
+Writing SDF files for all corners…
+Removing Clock latencies before writing libs…
+Writing timing models for all corners…
+Writing timing models for the nom_ff_n40C_5v50 corner to /config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/55-openroad-stapostpnr/nom_ff_n40C_5v50/majority_vote__nom_ff_n40C_5v50.lib…

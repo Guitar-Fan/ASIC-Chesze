@@ -30,9 +30,7 @@ ASIC-Chesze/
     ├── config.json
     ├── src/majority_vote.sv
     ├── verify/majority_vote_tb.sv
-    ├── majority_vote.vcd
-    ├── majority_vote.vvp
-    └── runs/
+    └── results/            # selected outputs from the completed run
 ```
 
 ## Devcontainer history
@@ -80,38 +78,6 @@ https://nix-cache.fossi-foundation.org
 ```
 
 The cache avoids building the large EDA dependency set locally.
-
-## Important Nix recovery detail
-
-LibreLane was originally a nested Git repository. It was later made part of
-the parent `ASIC-Chesze` repository as regular files. That changed how Nix
-resolved `self` and caused this error:
-
-```text
-cp: cannot create directory 'librelane/.github': Permission denied
-do not know how to unpack source archive ...
-```
-
-The previous nested Git metadata was preserved at:
-
-```text
-/tmp/ASIC-Chesze-librelane-git-01ddb25
-```
-
-The working recovery was:
-
-1. Restore that directory to `librelane/.git`.
-2. Keep the original LibreLane flake setting:
-
-```nix
-librelane = callPythonPackage ./default.nix {
-  flake = self;
-};
-```
-
-After restoring the nested Git identity, `cd librelane && nix develop` worked
-again. Do not remove `librelane/.git` unless the flake is redesigned for the
-parent repository layout.
 
 ## GF180MCU PDK
 
@@ -227,7 +193,7 @@ prevent the physical flow from completing.
 
 ## Successful physical run
 
-Run directory:
+The original complete run was generated as:
 
 ```text
 majority_vote/runs/RUN_2026-10-09_21-46-21
@@ -246,15 +212,15 @@ nix develop --command bash -lc '\
   librelane --log-level INFO config.json'
 ```
 
-Primary outputs:
+The reproducible intermediate run stages were removed during repository
+cleanup. Selected final outputs are retained under `majority_vote/results/`:
 
-- GDSII: `majority_vote/runs/RUN_2026-10-09_21-46-21/final/gds/majority_vote.gds`
-- Layout preview: `majority_vote/runs/RUN_2026-10-09_21-46-21/final/render/majority_vote.png`
-- DEF: `majority_vote/runs/RUN_2026-10-09_21-46-21/final/def/majority_vote.def`
-- LEF: `majority_vote/runs/RUN_2026-10-09_21-46-21/final/lef/majority_vote.lef`
-- SPICE: `majority_vote/runs/RUN_2026-10-09_21-46-21/final/spice/majority_vote.spice`
-- LVS report: `majority_vote/runs/RUN_2026-10-09_21-46-21/70-netgen-lvs/reports/lvs.netgen.rpt`
-- Metrics: `majority_vote/runs/RUN_2026-10-09_21-46-21/final/metrics.json`
+- GDSII: `majority_vote/results/gds/majority_vote.gds`
+- Layout preview: `majority_vote/results/render/majority_vote.png`
+- DEF: `majority_vote/results/def/majority_vote.def`
+- LEF: `majority_vote/results/lef/majority_vote.lef`
+- SPICE: `majority_vote/results/spice/majority_vote.spice`
+- Metrics: `majority_vote/results/metrics.json`
 
 Reported results:
 
@@ -321,7 +287,6 @@ Still needed before submission:
 - Publish the required external write-up.
 - Follow the current Hack Club submission form and deadline instructions.
 
-Current untracked/generated workspace items include the majority-vote simulation
-outputs, `majority_vote/config.json`, and `majority_vote/runs/`. Review these
-before committing; large run directories may be better archived or excluded
-from Git while retaining the key reports and final GDS.
+Generated simulation outputs and complete `runs/` directories are excluded by
+the root `.gitignore`; source, configuration, tests, and selected final results
+remain tracked.

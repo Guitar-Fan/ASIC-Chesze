@@ -1,5 +1,0 @@
-`verilator_config
-lint_off -rule DECLFILENAME
-lint_off -rule EOFNEWLINE
-lint_off -rule UNDRIVEN -file "/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/tmp/4bb321a81b984f9dacb0f0c6022f7647.bb.v"
-lint_off -rule UNUSEDSIGNAL -file "/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/tmp/4bb321a81b984f9dacb0f0c6022f7647.bb.v"

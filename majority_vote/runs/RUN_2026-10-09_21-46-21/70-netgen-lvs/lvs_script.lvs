@@ -1,7 +1,0 @@
-set circuit1 [readnet spice /config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/68-magic-spiceextraction/majority_vote.spice]
-set circuit2 [readnet verilog /dev/null]
-puts "Reading SPICE netlist file '/config/.ciel/ciel/gf180mcu/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice'..."
-readnet spice /config/.ciel/ciel/gf180mcu/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice $circuit2
-puts "Reading Verilog netlist file '/config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/52-openroad-fillinsertion/majority_vote.pnl.v'..."
-readnet verilog /config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/52-openroad-fillinsertion/majority_vote.pnl.v $circuit2
-lvs "$circuit1 majority_vote" "$circuit2 majority_vote" /nix/store/6lyl44lnn8z65vx1smpf55aiff6aa392-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/netgen/setup.tcl /config/workspace/ASIC-Chesze/majority_vote/runs/RUN_2026-10-09_21-46-21/70-netgen-lvs/reports/lvs.netgen.rpt -blackbox -json

@@ -1,0 +1,756 @@
+{
+  "nodes": [
+    {
+      "id": "librelane_docs_source_additional_material_caravel_macro_first_hardening_index_aes_wishbone_wrapper_hardening",
+      "label": "AES Wishbone Wrapper Hardening",
+      "file_type": "document",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/macro_first_hardening/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_additional_material_caravel_macro_first_hardening_index_user_project_wrapper_hardening",
+      "label": "User Project Wrapper Hardening",
+      "file_type": "document",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/macro_first_hardening/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_additional_material_caravel_top_level_integration_index_top_level_integration_strategy",
+      "label": "Top-Level Integration Strategy",
+      "file_type": "document",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/top_level_integration/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_additional_material_index_librelane_publications",
+      "label": "LibreLane Publications",
+      "file_type": "document",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_contributors_ci_librelane_ci",
+      "label": "LibreLane CI",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/ci.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_contributors_classes_mutability_guidelines",
+      "label": "Class Mutability Guidelines",
+      "file_type": "rationale",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/classes.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_contributors_code_contribution_workflow",
+      "label": "Contribution Workflow",
+      "file_type": "document",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/code.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_contributors_docs_documentation_guidelines",
+      "label": "Documentation Guidelines",
+      "file_type": "rationale",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/docs.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_contributors_index_contributor_guides",
+      "label": "Contributor Guides",
+      "file_type": "document",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/index.rst",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_contributors_llm_policy_llm_contribution_policy",
+      "label": "LLM Contribution Policy",
+      "file_type": "rationale",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/llm-policy.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_contributors_updating_tools_nix_tool_update",
+      "label": "Nix Tool Update Procedure",
+      "file_type": "document",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/updating_tools.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_faq_librelane",
+      "label": "LibreLane",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/faq.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_getting_started_index_getting_started",
+      "label": "Getting Started",
+      "file_type": "document",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_getting_started_migrants_index_migrating_from_openlane",
+      "label": "Migrating from OpenLane",
+      "file_type": "document",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/migrants/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_getting_started_migrants_variables_macros_configuration",
+      "label": "MACROS Configuration",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/migrants/variables.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_getting_started_newcomers_index_asic_design_flow",
+      "label": "ASIC Design Flow",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_glossary_librelane_glossary",
+      "label": "LibreLane Glossary",
+      "file_type": "document",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/glossary.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_index_librelane_documentation",
+      "label": "LibreLane Documentation",
+      "file_type": "document",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_installation_ubuntu_packages_ubuntu_packages",
+      "label": "Ubuntu Required Packages",
+      "file_type": "document",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/_ubuntu_packages.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_installation_appimage_installation_common_librelane_environment",
+      "label": "LibreLane Environment",
+      "file_type": "document",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/appimage_installation/_common.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_installation_appimage_installation_index_appimage_installation",
+      "label": "AppImage Installation",
+      "file_type": "document",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/appimage_installation/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_getting_started_newcomers_index_synthesis",
+      "label": "Synthesis",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_getting_started_newcomers_index_floorplanning_placement_routing",
+      "label": "Floorplanning Placement and Routing",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_getting_started_newcomers_index_signoff",
+      "label": "ASIC Signoff",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_getting_started_newcomers_index_drc",
+      "label": "Design Rule Checking",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_getting_started_newcomers_index_lvs",
+      "label": "Layout Versus Schematic",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_getting_started_newcomers_index_sta",
+      "label": "Static Timing Analysis",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_getting_started_newcomers_index_antenna_check",
+      "label": "Antenna Check",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_glossary_librelane_nix",
+      "label": "Nix",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/glossary.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_glossary_librelane_pdk",
+      "label": "Process Design Kit",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/glossary.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_glossary_librelane_rtl",
+      "label": "Register Transfer Level",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/glossary.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_glossary_librelane_gdsii",
+      "label": "GDSII",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/glossary.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_glossary_librelane_openroad",
+      "label": "OpenROAD",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/glossary.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_glossary_librelane_openlane",
+      "label": "OpenLane",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/glossary.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_glossary_librelane_sdc",
+      "label": "Synopsys Design Constraints",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/glossary.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_glossary_librelane_caravel",
+      "label": "Caravel",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/glossary.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "librelane_docs_source_glossary_librelane_lef",
+      "label": "Layout Exchange Format",
+      "file_type": "concept",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/glossary.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "librelane_docs_source_additional_material_caravel_macro_first_hardening_index_aes_wishbone_wrapper_hardening",
+      "target": "librelane_docs_source_additional_material_caravel_macro_first_hardening_index_user_project_wrapper_hardening",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/macro_first_hardening/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_additional_material_caravel_top_level_integration_index_top_level_integration_strategy",
+      "target": "librelane_docs_source_additional_material_caravel_macro_first_hardening_index_aes_wishbone_wrapper_hardening",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/top_level_integration/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_additional_material_caravel_top_level_integration_index_top_level_integration_strategy",
+      "target": "librelane_docs_source_additional_material_caravel_macro_first_hardening_index_user_project_wrapper_hardening",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/top_level_integration/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_index_getting_started",
+      "target": "librelane_docs_source_getting_started_newcomers_index_asic_design_flow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_index_getting_started",
+      "target": "librelane_docs_source_getting_started_migrants_index_migrating_from_openlane",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_migrants_index_migrating_from_openlane",
+      "target": "librelane_docs_source_getting_started_migrants_variables_macros_configuration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/migrants/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_migrants_index_migrating_from_openlane",
+      "target": "librelane_docs_source_glossary_librelane_nix",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/migrants/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_migrants_variables_macros_configuration",
+      "target": "librelane_docs_source_glossary_librelane_lef",
+      "relation": "conceptually_related_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.2,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/migrants/variables.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_newcomers_index_asic_design_flow",
+      "target": "librelane_docs_source_getting_started_newcomers_index_synthesis",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_newcomers_index_asic_design_flow",
+      "target": "librelane_docs_source_getting_started_newcomers_index_floorplanning_placement_routing",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_newcomers_index_asic_design_flow",
+      "target": "librelane_docs_source_getting_started_newcomers_index_signoff",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_newcomers_index_signoff",
+      "target": "librelane_docs_source_getting_started_newcomers_index_drc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_newcomers_index_signoff",
+      "target": "librelane_docs_source_getting_started_newcomers_index_lvs",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_newcomers_index_signoff",
+      "target": "librelane_docs_source_getting_started_newcomers_index_sta",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_newcomers_index_signoff",
+      "target": "librelane_docs_source_getting_started_newcomers_index_antenna_check",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_newcomers_index_asic_design_flow",
+      "target": "librelane_docs_source_glossary_librelane_rtl",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_newcomers_index_asic_design_flow",
+      "target": "librelane_docs_source_glossary_librelane_pdk",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_additional_material_caravel_macro_first_hardening_index_aes_wishbone_wrapper_hardening",
+      "target": "librelane_docs_source_glossary_librelane_caravel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/macro_first_hardening/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_additional_material_caravel_macro_first_hardening_index_aes_wishbone_wrapper_hardening",
+      "target": "librelane_docs_source_glossary_librelane_sdc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/macro_first_hardening/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_additional_material_caravel_macro_first_hardening_index_aes_wishbone_wrapper_hardening",
+      "target": "librelane_docs_source_glossary_librelane_gdsii",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/macro_first_hardening/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_contributors_code_contribution_workflow",
+      "target": "librelane_docs_source_contributors_ci_librelane_ci",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/code.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_contributors_index_contributor_guides",
+      "target": "librelane_docs_source_contributors_code_contribution_workflow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/index.rst",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_contributors_index_contributor_guides",
+      "target": "librelane_docs_source_contributors_docs_documentation_guidelines",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/index.rst",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_contributors_index_contributor_guides",
+      "target": "librelane_docs_source_contributors_llm_policy_llm_contribution_policy",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/index.rst",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_faq_librelane",
+      "target": "librelane_docs_source_glossary_librelane_openlane",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/faq.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_faq_librelane",
+      "target": "librelane_docs_source_glossary_librelane_openroad",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/faq.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_installation_appimage_installation_index_appimage_installation",
+      "target": "librelane_docs_source_installation_appimage_installation_common_librelane_environment",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/appimage_installation/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_newcomers_index_asic_design_flow",
+      "target": "librelane_docs_source_glossary_librelane_openroad",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "librelane_docs_source_getting_started_newcomers_index_asic_design_flow",
+      "target": "librelane_docs_source_glossary_librelane_gdsii",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "librelane_asic_signoff_checks",
+      "label": "ASIC Signoff Checks",
+      "nodes": [
+        "librelane_docs_source_getting_started_newcomers_index_drc",
+        "librelane_docs_source_getting_started_newcomers_index_lvs",
+        "librelane_docs_source_getting_started_newcomers_index_sta",
+        "librelane_docs_source_getting_started_newcomers_index_antenna_check"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md"
+    },
+    {
+      "id": "librelane_caravel_hardening_strategies",
+      "label": "Caravel Hardening Strategies",
+      "nodes": [
+        "librelane_docs_source_additional_material_caravel_macro_first_hardening_index_aes_wishbone_wrapper_hardening",
+        "librelane_docs_source_additional_material_caravel_macro_first_hardening_index_user_project_wrapper_hardening",
+        "librelane_docs_source_additional_material_caravel_top_level_integration_index_top_level_integration_strategy"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/top_level_integration/index.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "coverage": {
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/macro_first_hardening/index.md": 1224,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/top_level_integration/index.md": 355,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/index.md": 54,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/ci.md": 41,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/classes.md": 126,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/code.md": 210,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/docs.md": 150,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/index.rst": 13,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/llm-policy.md": 183,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/contributors/updating_tools.md": 110,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/faq.md": 111,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/index.md": 45,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/migrants/index.md": 342,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/migrants/variables.md": 132,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/index.md": 762,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/glossary.md": 455,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/index.md": 50,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/_ubuntu_packages.md": 8,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/appimage_installation/_common.md": 14,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/appimage_installation/index.md": 17
+  }
+}

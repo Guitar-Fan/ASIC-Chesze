@@ -1,0 +1,1 @@
+/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/ef_caravel_integration_power_routing.pdf

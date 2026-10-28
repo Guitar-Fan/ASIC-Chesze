@@ -1,0 +1,202 @@
+{
+  "nodes": [
+    {
+      "id": "pm32_diagram",
+      "label": "Pm32.Diagram",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/pm32.diagram.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mac_docker_privacy",
+      "label": "Mac Docker Privacy",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/docker_installation/mac_docker_privacy.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mac_docker_settings",
+      "label": "Mac Docker Settings",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/docker_installation/mac_docker_settings.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docker_settings",
+      "label": "Docker Settings",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/wsl/docker_settings.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "hyperv",
+      "label": "Hyperv",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/wsl/hyperv.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "powershell",
+      "label": "Powershell",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/wsl/powershell.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "wsl",
+      "label": "Wsl",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/wsl/wsl.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "architecture",
+      "label": "Architecture",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/reference/architecture.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "step",
+      "label": "Step",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/reference/step.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pdn",
+      "label": "Pdn",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/usage/pdn.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pdn_hierarchical",
+      "label": "Pdn Hierarchical",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/usage/pdn_hierarchical.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pdn_ring",
+      "label": "Pdn Ring",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/usage/pdn_ring.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "buffering",
+      "label": "Buffering",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/usage/timing_closure/buffering.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cloning",
+      "label": "Cloning",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/usage/timing_closure/cloning.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "false_path",
+      "label": "False Path",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/usage/timing_closure/false_path.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ff_parameters",
+      "label": "Ff Parameters",
+      "file_type": "image",
+      "source_file": "/config/workspace/ASIC-Chesze/librelane/docs/source/usage/timing_closure/ff_parameters.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "coverage": {
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/pm32.diagram.webp": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/docker_installation/mac_docker_privacy.webp": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/docker_installation/mac_docker_settings.webp": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/wsl/docker_settings.webp": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/wsl/hyperv.webp": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/wsl/powershell.webp": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/installation/wsl/wsl.webp": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/reference/architecture.svg": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/reference/step.webp": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/usage/pdn.svg": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/usage/pdn_hierarchical.webp": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/usage/pdn_ring.webp": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/usage/timing_closure/buffering.webp": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/usage/timing_closure/cloning.webp": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/usage/timing_closure/false_path.webp": 0,
+    "/config/workspace/ASIC-Chesze/librelane/docs/source/usage/timing_closure/ff_parameters.webp": 0
+  }
+}

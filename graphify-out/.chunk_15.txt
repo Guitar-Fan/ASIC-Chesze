@@ -1,0 +1,2 @@
+/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/klayout-markerbrowser-2.webp
+/config/workspace/ASIC-Chesze/librelane/docs/source/getting_started/newcomers/klayout-markerbrowser.webp

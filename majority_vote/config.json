@@ -1,9 +1,0 @@
-{
-  "DESIGN_NAME": "majority_vote",
-  "VERILOG_FILES": ["dir::src/majority_vote.sv"],
-  "PDK": "gf180mcuC",
-  "CLOCK_PERIOD": 10.0,
-  "CLOCK_PORT": null,
-  "FP_SIZING": "absolute",
-  "DIE_AREA": "0 0 160 100"
-}

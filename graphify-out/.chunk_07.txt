@@ -1,0 +1,1 @@
+/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/macro_first_hardening/aes-1-gds.webp

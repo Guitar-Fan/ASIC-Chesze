@@ -1,0 +1,1 @@
+/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/macro_first_hardening/mprj-gds-4.webp

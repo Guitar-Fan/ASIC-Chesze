@@ -1,0 +1,1 @@
+/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/top_level_integration/mprj-top-1.webp

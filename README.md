@@ -1,24 +1,47 @@
 # ASIC-Chesze
 
-Small GF180MCU digital ASIC projects targeting a maximum die area of
-`160 x 100 µm` (`100 x 160 µm` when rotated).
+Hack Club GF180MCU ASIC project targeting a `160 x 100 um` tile.
 
-## Repository layout
+The active draft design is an RTL chess clock. It is currently organized into
+the Tiny Tapeout-style source and test directories, but it is not submission
+ready until the required `tt_um_` wrapper, template metadata, workflows, FPGA
+files, and verification evidence are completed.
+
+## Layout
 
 ```text
 .
-├── librelane/             # Pinned LibreLane 3.0.16 toolchain source
-├── majority_vote/
-│   ├── src/               # Synthesizable SystemVerilog
-│   ├── verify/            # Self-checking testbench
-│   ├── config.json        # GF180MCU physical-flow configuration
-│   └── results/           # Final outputs from the reference run
-├── plan.md                # Project and submission checklist
-└── terminal.md            # Toolchain commands
+├── src/                    # Active synthesizable RTL and physical config
+├── test/                   # Active SystemVerilog testbench
+├── docs/                   # Project and evidence documentation
+├── build/                  # Reserved for reproducible build outputs
+├── majority_vote/          # Historical verified majority-vote run
+├── librelane/              # LibreLane 3.0.16 toolchain source
+├── info.yaml               # Draft project metadata
+├── plan.md                 # Two-design submission plan
+├── requirements.md         # Submission requirements and migration checklist
+├── engineering-log.md      # Dated engineering notes
+└── terminal.md             # Spaces/Nix toolchain commands
 ```
 
-Generated simulation files and complete LibreLane `runs/` directories are
-ignored. Keep source, configuration, verification, and selected final signoff
-artifacts in Git rather than every intermediate flow file.
+## Current design
 
-See `terminal.md` for environment setup and flow commands.
+`src/ultimate_chess_clock.sv` implements the current chess-clock draft and
+`test/ultimate_chess_clock_tb.sv` exercises it. The testbench currently needs a
+defined pause/resume behavior and VCD tracing before it can be considered a
+passing submission test.
+
+The physical config is `src/config.json`; it targets GF180MCU, the
+`ultimate_chess_clock` top module, a 10 ns clock, and a `160 x 100 um` die.
+
+## Toolchain
+
+Start the verified Spaces toolchain with:
+
+```bash
+cd /config/workspace/ASIC-Chesze/librelane
+nix develop
+```
+
+See [terminal.md](terminal.md) for Nix, Ciel, simulation, and LibreLane
+commands. See [requirements.md](requirements.md) for the submission checklist.

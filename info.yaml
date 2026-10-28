@@ -1,0 +1,43 @@
+# Draft metadata. Replace with the exact current Tiny Tapeout GF180MCU
+# metadata schema before submission.
+yaml_version: 6
+project:
+  title: "Ultimate Chess Clock"
+  author: "Guitar-Fan"
+  description: "A two-player digital chess clock with setup controls and timeout status."
+  language: "SystemVerilog"
+  clock_hz: 100000000
+  top_module: "tt_um_guitarfan_ultimate_chess_clock"
+tile:
+  width_um: 160
+  height_um: 100
+source_files:
+  - "tt_um_guitarfan_ultimate_chess_clock.v"
+  - "ultimate_chess_clock.sv"
+# The current module does not yet use the required tt_um_* wrapper interface.
+# Add the template wrapper and update top_module/source_files before submission.
+pinout:
+  ui[0]: "TBD: one_second_tick"
+  ui[1]: "TBD: player1_button"
+  ui[2]: "TBD: player2_button"
+  ui[3]: "TBD: mode_button"
+  ui[4]: "TBD: plus_button"
+  ui[5]: "TBD: minus_button"
+  ui[6]: ""
+  ui[7]: ""
+  uo[0]: "TBD: player1_display[0]"
+  uo[1]: "TBD: player1_display[1]"
+  uo[2]: "TBD: player1_display[2]"
+  uo[3]: "TBD: player1_display[3]"
+  uo[4]: "TBD: player1_display[4]"
+  uo[5]: "TBD: player1_display[5]"
+  uo[6]: "TBD: player1_display[6]"
+  uo[7]: "TBD: player1_display[7]"
+  uio[0]: "TBD: player2_display[0]"
+  uio[1]: "TBD: player2_display[1]"
+  uio[2]: "TBD: player2_display[2]"
+  uio[3]: "TBD: player2_display[3]"
+  uio[4]: "TBD: player2_display[4]"
+  uio[5]: "TBD: player2_display[5]"
+  uio[6]: "TBD: player2_display[6]"
+  uio[7]: "TBD: player2_display[7]"

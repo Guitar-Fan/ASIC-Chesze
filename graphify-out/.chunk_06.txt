@@ -1,0 +1,3 @@
+/config/workspace/ASIC-Chesze/librelane/docs/_static/logo/librelane-logo-full.svg
+/config/workspace/ASIC-Chesze/librelane/docs/_static/logo/librelane-logo-white.svg
+/config/workspace/ASIC-Chesze/librelane/docs/source/additional_material/caravel/flattened_wrapper/mprj-flattened-1.webp

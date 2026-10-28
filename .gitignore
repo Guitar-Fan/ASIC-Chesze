@@ -2,9 +2,12 @@
 *.vcd
 *.vvp
 *.fst
+core.*
+*.core
 
 # LibreLane generated runs
 **/runs/
+majority_vote/results/
 
 # Python and test caches
 __pycache__/
